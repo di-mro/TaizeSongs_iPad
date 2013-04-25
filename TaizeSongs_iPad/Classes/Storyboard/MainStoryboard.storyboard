@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="14">
+            <objects>
+                <navigationController id="3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="19" kind="relationship" relationship="rootViewController" id="25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="-1346"/>
+        </scene>
+        <!--About Page View Controller-->
+        <scene sceneID="2xn-7V-NAH">
+            <objects>
+                <viewController id="0eC-pD-tvK" customClass="AboutPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tX-Su-EuK">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8v-Gt-rTu">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="r8v-Gt-rTu" firstAttribute="trailing" secondItem="5tX-Su-EuK" secondAttribute="trailing" type="default" id="YoJ-du-Cia"/>
+                            <constraint firstItem="r8v-Gt-rTu" firstAttribute="leading" secondItem="5tX-Su-EuK" secondAttribute="leading" type="default" id="new-iA-o0c"/>
+                            <constraint firstItem="r8v-Gt-rTu" firstAttribute="bottom" secondItem="5tX-Su-EuK" secondAttribute="bottom" type="default" id="rZE-Gz-pdo"/>
+                            <constraint firstItem="r8v-Gt-rTu" firstAttribute="top" secondItem="5tX-Su-EuK" secondAttribute="top" type="default" id="wkf-dB-n9P"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutPageTextView" destination="r8v-Gt-rTu" id="zr2-hh-LNo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Be4-pA-Ctg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-1998"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bl5-85-zUC">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="fY0-ox-0mM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qdc-m1-Qy6">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4" kind="relationship" relationship="rootViewController" id="RkV-5i-hrx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfB-WB-vGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303" y="-394"/>
+        </scene>
+        <!--Detail View Controller - Song Sheet-->
+        <scene sceneID="16">
+            <objects>
+                <viewController storyboardIdentifier="" title="Song Sheet" id="4" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="26">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap on the menu to view songs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGd-6L-GR2">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Ad0-QR-lfP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vGd-6L-GR2" firstAttribute="top" secondItem="26" secondAttribute="top" constant="213" id="3b0-SA-pKf"/>
+                            <constraint firstAttribute="trailing" secondItem="vGd-6L-GR2" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Hku-SS-N4z"/>
+                            <constraint firstItem="vGd-6L-GR2" firstAttribute="leading" secondItem="26" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="nhS-qc-gLE"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="53"/>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="vGd-6L-GR2" id="cOS-sK-A7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="15" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="-388"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="18">
+            <objects>
+                <splitViewController id="5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <segue destination="3" kind="relationship" relationship="masterViewController" id="9"/>
+                        <segue destination="fY0-ox-0mM" kind="relationship" relationship="detailViewController" id="FSj-oy-lNr"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1506" y="-846"/>
+        </scene>
+        <!--Home Page View Controller - Listing-->
+        <scene sceneID="24">
+            <objects>
+                <tableViewController storyboardIdentifier="" title="Listing" clearsSelectionOnViewWillAppear="NO" id="19" customClass="HomePageViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="20">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homePageCell" textLabel="tIi-5l-S0i" style="IBUITableViewCellStyleDefault" id="ZSw-0O-9Pw">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tIi-5l-S0i">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="19" id="22"/>
+                            <outlet property="delegate" destination="19" id="21"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="40"/>
+                    <connections>
+                        <segue destination="K0F-iz-o9y" kind="push" identifier="homeToSongListing" splitViewControllerTargetIndex="0" id="4vR-yl-Ojn"/>
+                        <segue destination="0eC-pD-tvK" kind="push" identifier="homeToAbout" splitViewControllerTargetIndex="1" id="czs-SN-t6w"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189" y="-2250"/>
+        </scene>
+        <!--Song Listing View Controller - Listing-->
+        <scene sceneID="dYO-5g-6sp">
+            <objects>
+                <viewController id="K0F-iz-o9y" customClass="SongListingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l7Q-er-yOC">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oio-Su-Mat">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="songListingPageCell" textLabel="PQO-fM-0ef" style="IBUITableViewCellStyleDefault" id="jbK-Mp-dkh">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQO-fM-0ef">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="K0F-iz-o9y" id="3O3-H2-2wA"/>
+                                    <outlet property="delegate" destination="K0F-iz-o9y" id="SnU-hg-35R"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oio-Su-Mat" firstAttribute="bottom" secondItem="l7Q-er-yOC" secondAttribute="bottom" type="default" id="9jE-pw-qaS"/>
+                            <constraint firstItem="oio-Su-Mat" firstAttribute="trailing" secondItem="l7Q-er-yOC" secondAttribute="trailing" type="default" id="ZMu-NP-tBl"/>
+                            <constraint firstItem="oio-Su-Mat" firstAttribute="leading" secondItem="l7Q-er-yOC" secondAttribute="leading" type="default" id="pqj-ib-aR1"/>
+                            <constraint firstItem="oio-Su-Mat" firstAttribute="top" secondItem="l7Q-er-yOC" secondAttribute="top" type="default" id="uLA-eB-c85"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Listing" id="UNJ-tl-xyr"/>
+                    <connections>
+                        <segue destination="xv1-RO-gb4" kind="push" identifier="songListingToSongSheet" splitViewControllerTargetIndex="0" id="xRr-8J-Nhp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewg-5y-275" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="651" y="-2899"/>
+        </scene>
+        <!--Song Sheet View Controller-->
+        <scene sceneID="Azu-zw-TcW">
+            <objects>
+                <viewController id="xv1-RO-gb4" customClass="SongSheetViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PkI-bc-nZJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dw5-wf-UN5">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="alphabeticalListingCell" textLabel="3ge-VJ-gzH" style="IBUITableViewCellStyleDefault" id="tCe-ua-q5M">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ge-VJ-gzH">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xv1-RO-gb4" id="74S-sd-OOc"/>
+                                    <outlet property="delegate" destination="xv1-RO-gb4" id="uWn-Se-pUP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dw5-wf-UN5" firstAttribute="top" secondItem="PkI-bc-nZJ" secondAttribute="top" type="default" id="bEU-Eg-Oct"/>
+                            <constraint firstItem="dw5-wf-UN5" firstAttribute="trailing" secondItem="PkI-bc-nZJ" secondAttribute="trailing" type="default" id="hBT-r6-8sm"/>
+                            <constraint firstItem="dw5-wf-UN5" firstAttribute="leading" secondItem="PkI-bc-nZJ" secondAttribute="leading" type="default" id="rX6-rT-pNi"/>
+                            <constraint firstItem="dw5-wf-UN5" firstAttribute="bottom" secondItem="PkI-bc-nZJ" secondAttribute="bottom" type="default" id="tqk-8H-sxe"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <segue destination="Qjx-VF-cZq" kind="push" identifier="listingToSheetView" splitViewControllerTargetIndex="1" id="9AH-bV-6Pb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wT-49-pmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="-2899"/>
+        </scene>
+        <!--Single Sheet View Controller - Song Sheet-->
+        <scene sceneID="Xy2-Vt-OAb">
+            <objects>
+                <viewController id="Qjx-VF-cZq" customClass="SingleSheetViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WcE-8M-UHC">
+                        <rect key="frame" x="0.0" y="64" width="703" height="704"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="lz1-AK-Faw"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-UQ-jEh"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CBM-UQ-jEh" firstAttribute="top" secondItem="WcE-8M-UHC" secondAttribute="top" type="default" id="6Bv-9V-XCC"/>
+                            <constraint firstItem="lz1-AK-Faw" firstAttribute="top" secondItem="WcE-8M-UHC" secondAttribute="top" type="default" id="8B7-KX-0Z8"/>
+                            <constraint firstItem="lz1-AK-Faw" firstAttribute="leading" secondItem="WcE-8M-UHC" secondAttribute="leading" type="default" id="AzT-LZ-sBS"/>
+                            <constraint firstItem="CBM-UQ-jEh" firstAttribute="bottom" secondItem="WcE-8M-UHC" secondAttribute="bottom" type="default" id="CzF-qI-lJJ"/>
+                            <constraint firstItem="lz1-AK-Faw" firstAttribute="bottom" secondItem="WcE-8M-UHC" secondAttribute="bottom" type="default" id="H7V-i3-EdZ"/>
+                            <constraint firstItem="CBM-UQ-jEh" firstAttribute="leading" secondItem="WcE-8M-UHC" secondAttribute="leading" type="default" id="Ob0-os-458"/>
+                            <constraint firstItem="lz1-AK-Faw" firstAttribute="trailing" secondItem="WcE-8M-UHC" secondAttribute="trailing" type="default" id="e2H-hc-Ifr"/>
+                            <constraint firstItem="CBM-UQ-jEh" firstAttribute="trailing" secondItem="WcE-8M-UHC" secondAttribute="trailing" type="default" id="evj-z0-8Yw"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Song Sheet" id="xWb-10-SWI"/>
+                    <connections>
+                        <outlet property="songSheetImageDisplay" destination="lz1-AK-Faw" id="obU-Ev-3z0"/>
+                        <outlet property="songSheetScroller" destination="CBM-UQ-jEh" id="RAS-17-dTK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3f8-j0-AxS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="-2899"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AboutPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="aboutPageTextView" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="HomePageViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HomePageViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="SingleSheetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SingleSheetViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="songSheetImageDisplay" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="songSheetScroller" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="SongListingViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SongListingViewController.h"/>
+        </class>
+        <class className="SongSheetViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SongSheetViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
