@@ -82,6 +82,13 @@
 }
 
 
+//Change the Height of the Cell [Default is 45]:
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath
+{
+  return 70;
+}
+
+
 #pragma mark - Segue
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
