@@ -101,10 +101,10 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
   
   //configure the cell
-  cell.textLabel.text = [self.songListingPageEntries objectAtIndex:indexPath.row];
-  cell.imageView.image = [UIImage imageNamed:@"taize_cross_red.png"];
-  
+  cell.textLabel.text          = [self.songListingPageEntries objectAtIndex:indexPath.row];
+  cell.imageView.image         = [UIImage imageNamed:@"taize_cross_red.png"];
   cell.textLabel.numberOfLines = 0;
+  
   return cell;
 }
 
@@ -130,6 +130,7 @@
   if ([segue.identifier isEqualToString:@"songListingToSongSheet"])
   {
     NSLog(@"prepare for segue - index: %d", index);
+    
     SongSheetViewController *destViewController = segue.destinationViewController;
     destViewController.index = index;
   }

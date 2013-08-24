@@ -26,7 +26,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        // Custom initialization
     }
     return self;
 }
@@ -39,11 +38,11 @@
   [self.navigationItem setHidesBackButton:YES animated:NO];
   
   //Initialize frame for the song sheet image
-  CGRect imageFrame = songSheetImageDisplay.frame; //CGRectMake(0, 0, 320, 720);
+  CGRect imageFrame      = songSheetImageDisplay.frame; //CGRectMake(0, 0, 320, 720);
   imageFrame.size.height = 1136;
-  imageFrame.size.width = 640;
+  imageFrame.size.width  = 640;
   
-  songSheetImageDisplay = [[UIImageView alloc] initWithFrame:imageFrame];
+  songSheetImageDisplay       = [[UIImageView alloc] initWithFrame:imageFrame];
   songSheetImageDisplay.image = selectedSongSheet;
   
   //Configure Scroller size

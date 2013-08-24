@@ -106,24 +106,25 @@
 {
   self.navigationItem.title = @"A";
   songEntries = [[NSMutableArray alloc]
-                  initWithObjects: @"Aber Du Weisst Den Weg Für Mich"
-                                 , @"Ad Te Jesu Christe"
-                                 , @"Adoramus Te Christe"
-                                 , @"Adoramus Te O Christe"
-                                 , @"Alleluia 4"
-                                 , @"Alleluia 7"
-                                 , @"Alleluia 8"
-                                 , @"Alleluia 10"
-                                 , @"Alleluia 11"
-                                 , @"Alleluia 16"
-                                 , @"Alleluia 17"
-                                 , @"Alleluia 18"
-                                 , @"Alleluia 20"
-                                 , @"Alleluia 21"
-                                 , @"Alleluia 22"
-                                 , @"Alleluia (Kiev)"
-                                 , @"Alleluia"
-                                 , nil];
+                  initWithObjects:
+                   @"Aber Du Weisst Den Weg Für Mich"
+                 , @"Ad Te Jesu Christe"
+                 , @"Adoramus Te Christe"
+                 , @"Adoramus Te O Christe"
+                 , @"Alleluia 4"
+                 , @"Alleluia 7"
+                 , @"Alleluia 8"
+                 , @"Alleluia 10"
+                 , @"Alleluia 11"
+                 , @"Alleluia 16"
+                 , @"Alleluia 17"
+                 , @"Alleluia 18"
+                 , @"Alleluia 20"
+                 , @"Alleluia 21"
+                 , @"Alleluia 22"
+                 , @"Alleluia (Kiev)"
+                 , @"Alleluia"
+                 , nil];
   
   songImages = [[NSMutableArray alloc]
                 initWithObjects:
@@ -147,7 +148,6 @@
                 , nil];
 
   NSLog(@"songImages: %@", songImages);
-  
 }
 
 
@@ -156,20 +156,21 @@
 {
   self.navigationItem.title = @"B";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Beati Voi Poveri"
-                                , @"Behüte Mich Gott"
-                                , @"Bendigo Al Señor"
-                                , @"Benedictus (Canon)"
-                                , @"Benedictus Dominus Deus"
-                                , @"Bénissez Le Seigneur"
-                                , @"Bleib Mit Deiner Gnade"
-                                , @"Bleibet Hier"
-                                , @"Bless The Lord"
-                                , @"Bóg Jest Miloscia"
-                                , @"Bogoroditse Dievo 1"
-                                , @"Bogoroditse Dievo 2"
-                                , @"Bonum Est Confidere"
-                                , nil];
+                 initWithObjects:
+                   @"Beati Voi Poveri"
+                 , @"Behüte Mich Gott"
+                 , @"Bendigo Al Señor"
+                 , @"Benedictus (Canon)"
+                 , @"Benedictus Dominus Deus"
+                 , @"Bénissez Le Seigneur"
+                 , @"Bleib Mit Deiner Gnade"
+                 , @"Bleibet Hier"
+                 , @"Bless The Lord"
+                 , @"Bóg Jest Miloscia"
+                 , @"Bogoroditse Dievo 1"
+                 , @"Bogoroditse Dievo 2"
+                 , @"Bonum Est Confidere"
+                 , nil];
   
   songImages = [[NSMutableArray alloc]
                 initWithObjects:
@@ -227,7 +228,8 @@
 {
   self.navigationItem.title = @"D";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Da Pacem Cordium"
+                 initWithObjects:
+                   @"Da Pacem Cordium"
                  , @"Da Pacem... In Diebus"
                  , @"Dans Nos Obscurités"
                  , @"De Noche"
@@ -256,7 +258,8 @@
 {
   self.navigationItem.title = @"E";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Eat This Bread"
+                 initWithObjects:
+                   @"Eat This Bread"
                  , @"El Alma Que Anda En Amor"
                  , @"El Senyor (In the Lord / Meine Hoffnung / Pan Jest Moca)"
                  , @"Esprit Consolateur"
@@ -266,7 +269,7 @@
   
   songImages = [[NSMutableArray alloc]
                 initWithObjects:
-                @"eat_this_bread.png"
+                  @"eat_this_bread.png"
                 , @"elalma.png"
                 , @"elseny.png"
                 , @"esprit_consolateur.png"
@@ -281,7 +284,8 @@
 {
   self.navigationItem.title = @"F";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Fiez-vous en Lui"
+                 initWithObjects:
+                   @"Fiez-vous en Lui"
                  , @"Frieden, Frieden"
                  , nil];
   
@@ -298,7 +302,8 @@
 {
   self.navigationItem.title = @"G";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Gloria, Gloria"
+                 initWithObjects:
+                   @"Gloria, Gloria"
                  , @"Gloria... Et In Terra Pax"
                  , @"Grande Est Ta Bonté"
                  , nil];
@@ -316,14 +321,9 @@
 - (void) hSongs
 {
   self.navigationItem.title = @"H";
-  songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @""
-                 , nil];
+  songEntries = [[NSMutableArray alloc] init];
   
-  songImages = [[NSMutableArray alloc]
-                initWithObjects:
-                @""
-                , nil];
+  songImages = [[NSMutableArray alloc] init];
 }
 
 
@@ -332,7 +332,8 @@
 {
   self.navigationItem.title = @"I";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"I Am Sure I Shall See"
+                 initWithObjects:
+                   @"I Am Sure I Shall See"
                  , @"Iedere Nacht Verlang Ik"
                  , @"Il Signore Ti Ristora"
                  , @"In Manus Tuas"
@@ -357,7 +358,8 @@
 {
   self.navigationItem.title = @"J";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Jesu Redemptor"
+                 initWithObjects:
+                   @"Jesu Redemptor"
                  , @"Jésus Le Christ"
                  , @"Jésus, Ma Joie"
                  , @"Jesus, Remember Me"
@@ -384,7 +386,8 @@
 {
   self.navigationItem.title = @"K";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Kristus, Din Ande"
+                 initWithObjects:
+                   @"Kristus, Din Ande"
                  , @"Kyrie Eleison 1"
                  , @"Kyrie Eleison 5"
                  , @"Kyrie Eleison 6"
@@ -402,7 +405,7 @@
   
   songImages = [[NSMutableArray alloc]
                 initWithObjects:
-                 @"kridin.png"
+                  @"kridin.png"
                 , @"kyr_01.png"
                 , @"kyr_05.png"
                 , @"kyr_06.png"
@@ -425,7 +428,8 @@
 {
   self.navigationItem.title = @"L";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"L'ajuda Em Vindrà"
+                 initWithObjects:
+                   @"L'ajuda Em Vindrà"
                  , @"La Ténèbre"
                  , @"Laetentur Coeli"
                  , @"Laudate Dominum"
@@ -451,7 +455,8 @@
 {
   self.navigationItem.title = @"M";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Magnificat (Canon)"
+                 initWithObjects:
+                   @"Magnificat (Canon)"
                  , @"Magnificat (Choral)"
                  , @"Magnificat 3"
                  , @"Mane Nobiscum"
@@ -476,7 +481,8 @@
 {
   self.navigationItem.title = @"N";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Nada Te Turbe"
+                 initWithObjects:
+                   @"Nada Te Turbe"
                  , @"Nebojte Se"
                  , @"Nothing Can Ever"
                  , @"Notre Ame Attend"
@@ -500,7 +506,8 @@
 {
   self.navigationItem.title = @"O";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"O Christe Domine Jesu"
+                 initWithObjects:
+                   @"O Christe Domine Jesu"
                  , @"O Toi, L'au-delà De Tout"
                  , @"Oculi Nostri"
                  , @"Ostende Nobis"
@@ -521,7 +528,8 @@
 {
   self.navigationItem.title = @"P";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Probudi Se"
+                 initWithObjects:
+                   @"Probudi Se"
                  , @"Psallite Deo"
                  , nil];
   
@@ -538,7 +546,8 @@
 {
   self.navigationItem.title = @"Q";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Que J'exulte Et Jubile"
+                 initWithObjects:
+                   @"Que J'exulte Et Jubile"
                  , @"Qui Regarde Vers Dieu"
                  , nil];
   
@@ -555,7 +564,8 @@
 {
   self.navigationItem.title = @"R";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Retourne, Mon Ame, A Ton Repos"
+                 initWithObjects:
+                   @"Retourne, Mon Ame, A Ton Repos"
                  , nil];
   
   songImages = [[NSMutableArray alloc]
@@ -570,7 +580,8 @@
 {
   self.navigationItem.title = @"S";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Sanctum Nomen Domini"
+                 initWithObjects:
+                   @"Sanctum Nomen Domini"
                  , @"See, I Am Near"
                  , @"Seigneur, Tu Gardes Mon Ame"
                  , @"Sfinte Dumnezeule"
@@ -603,7 +614,8 @@
 {
   self.navigationItem.title = @"T";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"The Kingdom Of God"
+                 initWithObjects:
+                   @"The Kingdom Of God"
                  , @"Toi, Tu Nous Aimes"
                  , @"Tu Sei Sorgente Viva"
                  , @"Tui Amoris"
@@ -624,7 +636,8 @@
 {
   self.navigationItem.title = @"U";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Ubi Caritas"
+                 initWithObjects:
+                   @"Ubi Caritas"
                  , @"Ubi Caritas Deus Ibi Est"
                  , @"Une Soif Emplit Notre Ame"
                  , nil];
@@ -643,7 +656,8 @@
 {
   self.navigationItem.title = @"V";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Veni Creator (Canon)"
+                 initWithObjects:
+                   @"Veni Creator (Canon)"
                  , @"Veni Creator (Litanie)"
                  , @"Veni Lumen (Choral)"
                  , @"Veni Sancte Spiritus"
@@ -671,7 +685,8 @@
 {
   self.navigationItem.title = @"F";
   songEntries = [[NSMutableArray alloc]
-                 initWithObjects: @"Wait For The Lord"
+                 initWithObjects:
+                   @"Wait For The Lord"
                  , @"Wyslawiajcie Pana"
                  , nil];
   
@@ -745,9 +760,9 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
   
   //configure the cell
-  cell.textLabel.text = [self.songEntries objectAtIndex:indexPath.row];
-  
+  cell.textLabel.text          = [self.songEntries objectAtIndex:indexPath.row];
   cell.textLabel.numberOfLines = 0;
+  
   return cell;
 }
 
@@ -763,6 +778,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
   NSLog(@"indexPath.row: %d", indexPath.row);
+  
   songSheetImage = [UIImage imageNamed:(NSString*)[self.songImages objectAtIndex:indexPath.row]];
   [self performSegueWithIdentifier:@"listingToSheetView" sender:self];
 }

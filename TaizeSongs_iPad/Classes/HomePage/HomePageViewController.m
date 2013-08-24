@@ -29,15 +29,18 @@
   
   //Initialize display entries in Home Page
   homePageEntries = [[NSArray alloc]
-                     initWithObjects: @"Song Listing"
+                     initWithObjects:
+                     @"Song Listing"
                      , @"About"
                      , nil];
   
+  /*
   homePageIcons = [[NSArray alloc]
-                   initWithObjects: @"songsheet_icon.png"
+                   initWithObjects:
+                   @"songsheet_icon.png"
                    , @"dungeon_icon.png"
                    , nil];
-
+   //*/
   
   [super viewDidLoad];
 }
@@ -51,7 +54,6 @@
 #pragma mark - Table view data source implementation
 - (NSInteger) numberOfSectionsInTableView:(UITableView *) tableView
 {
-  //Return the number of sections.
   return 1;
 }
 
@@ -63,7 +65,6 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  //Return the number of rows in the section
   return [homePageEntries count];
 }
 
@@ -73,11 +74,10 @@
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
   
   //configure the cell
-  cell.textLabel.text = [self.homePageEntries objectAtIndex:indexPath.row];
-  cell.imageView.image = [UIImage imageNamed:@"taize_cross_yellow.png"];
-  //cell.imageView.image = [UIImage imageNamed:(NSString *)[self.homePageIcons objectAtIndex:indexPath.row]];
-  
+  cell.textLabel.text          = [self.homePageEntries objectAtIndex:indexPath.row];
+  cell.imageView.image         = [UIImage imageNamed:@"taize_cross_yellow.png"];
   cell.textLabel.numberOfLines = 0;
+  
   return cell;
 }
 
@@ -94,10 +94,10 @@
 {
   switch (indexPath.row)
   {
-      //Song Listing Page
+    //Song Listing Page
     case 0: [self performSegueWithIdentifier:@"homeToSongListing" sender:self];
       break;
-      //About Page
+    //About Page
     case 1: [self performSegueWithIdentifier:@"homeToAbout" sender:self];
       break;
     default: break;
