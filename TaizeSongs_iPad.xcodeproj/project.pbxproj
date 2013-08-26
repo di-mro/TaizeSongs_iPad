@@ -1168,10 +1168,12 @@
 		ED4BA9181728DB6400AA0D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dean Marc Co (DAW3GSYR87)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TaizeSongs_iPad/TaizeSongs_iPad-Prefix.pch";
 				INFOPLIST_FILE = "TaizeSongs_iPad/TaizeSongs_iPad-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2F359F83-6CED-4557-AF46-B9885DECCE6F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1179,10 +1181,12 @@
 		ED4BA9191728DB6400AA0D84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dean Marc Co (DAW3GSYR87)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TaizeSongs_iPad/TaizeSongs_iPad-Prefix.pch";
 				INFOPLIST_FILE = "TaizeSongs_iPad/TaizeSongs_iPad-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2F359F83-6CED-4557-AF46-B9885DECCE6F";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
